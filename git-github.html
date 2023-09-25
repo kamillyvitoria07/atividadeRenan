@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Que É Git e GitHub?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #40a834;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            color: #40a834;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>O Que É Git e GitHub?</h1>
+    </header>
+    <div class="container">
+        <h1>O que é Git e GitHub?</h1>
+        <p>GitHub é uma plataforma feita para hospedagem de códigos de programação. Os objetivos principais são o controle e a colaboração, permitindo que usuários desenvolvam projetos juntos, estando em qualquer lugar do mundo.</p>
+        <p>O GitHub é uma plataforma de controle de versões gratuita que serve para gerir projetos e permite a colaboração entre uma grande comunidade de desenvolvedores, contribuindo com melhorias e comentários.</p>
+        <h2>Configurando Chave SSH</h2>
+        <p>Uma chave SSH é necessária para autenticar sua identidade ao interagir com repositórios remotos no GitHub. Siga os passos abaixo para configurar uma chave SSH:</p>
+        <ol>
+            <li>Verifique se você já possui uma chave SSH:
+                <pre><code>ls ~/.ssh/</code></pre>
+            </li>
+            <li>Se você não tiver uma chave SSH, crie uma:
+                <pre><code>ssh-keygen -t rsa -b 4096 -C "seu-email@example.com"</code></pre>
+            </li>
+            <li>Copie a chave pública para a área de transferência:
+                <pre><code>cat ~/.ssh/id_rsa.pub | clip (Windows) ou pbcopy (Mac)</code></pre>
+            </li>
+            <li>Cole a chave pública em suas configurações do GitHub:
+                <a href="https://github.com/settings/keys" target="_blank">https://github.com/settings/keys</a>
+            </li>
+        </ol>
+        <h2>Criando e Clonando um Repositório</h2>
+        <p>Para criar um novo repositório no GitHub e cloná-lo em seu computador, siga os passos abaixo:</p>
+        <ol>
+            <li>Entre na sua conta GitHub e clique em "New" (Novo) para criar um novo repositório.</li>
+            <li>Preencha os detalhes do repositório, como nome, descrição e opções de visibilidade.</li>
+            <li>Clique em "Create Repository" (Criar Repositório).</li>
+            <li>Após criar o repositório, você verá a URL do repositório. Copie essa URL.</li>
+            <li>No seu computador, abra o terminal e navegue até a pasta onde deseja clonar o repositório.</li>
+            <li>Cole a URL do repositório e execute o seguinte comando para cloná-lo:
+                <pre><code>git clone URL_DO_REPOSITORIO</code></pre>
+            </li>
+            <li>Você agora tem uma cópia local do repositório para colocar em seu computador.</li>
+        </ol>
+    </div>
+</body>
+</html>
